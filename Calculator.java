@@ -26,10 +26,20 @@ public class Calculator {
         System.out.println("Multiplication is " + (num1*num2));
         break;
         case 4 :
-        System.out.println("Division is " + (num1/num2));
+                if(num2 == 0){
+                    System.out.println("Invalid Division");
+                }
+                else{
+                    System.out.println("Division is " + (num1/num2));
+                }
         break;
         case 5 : 
-        System.out.println("Modulo is " + (num1%num2));
+                if(num2 == 0){
+                    System.out.println("Invalid Modulo Division");
+                }
+                else{
+                    System.out.println("Division is " + (num1%num2));
+                }
         break;
         default : 
         System.out.println("Invalid Case");
